@@ -1,0 +1,289 @@
+---
+layout: default
+title: Max Leiserson's Website
+---
+
+<section id="about">
+    <div class="container">
+        <h1 class="page-heading">About</h1>
+        <p class="caption" style="margin-bottom:15px">
+            I am a computer scientist and computational biologist working as a post-doctoral researcher at <a href='http://research.microsoft.com/en-us/labs/newengland/' targe='_new'>Microsoft Research New England</a>.
+            My main research interests are in developing and applying algorithms and statistics to understand the genetics of cancer.
+            <i style="color:blue;font-weight:100">
+                I will join the <a href="http://cs.umd.edu" target="_new">Computer Science Department at Maryland College Park</a> as an assistant professor in August 2017.
+            </i>
+        </p>
+        <p class="caption" style="margin-bottom:15px">
+            I received my Ph.D. from <a href="http://cs.brown.edu" target="_new">Brown</a> in May 2016, where I worked with <a href="https://cs.brown.edu/people/faculty/braphael.html" target="_new">Dr. Ben Raphael</a>, supported by an NSF Graduate Research Fellowship.
+            Previously, I worked with <a href="http://www.cs.tufts.edu/~hescott/" target="_new">Ben Hescott</a> and <a href="http://www.cs.tufts.edu/~cowen/" target="_new">Lenore Cowen</a> at <a href="http://www.cs.tufts.edu/" target="_new">Tufts University</a>.
+            Please see
+            <a href="{{ site.baseurl }}/assets/docs/MLeiserson_CV.pdf" target="_new">
+                my CV
+            </a> for additional details.
+        </p>
+        <p class="caption">
+            When I'm not working, I enjoy tennis (as a player and fan), catching a good movie, and traveling the globe.
+        </p>
+    </div>
+</section>
+<section id="events">
+    <div class="container">
+        <h1 class="page-heading">Recent/Upcoming Talks & Events</h1>
+        <dl class="dl-horizontal" style="margin-bottom:0px">
+            {% for event in site.data.events.events %}
+                <dt class="event"><b>{{ event.date }}</b></dt>
+                <dd class="event">
+                    <a href="{{ event.link }}" target="_new">{{ event.name }}</a> ({{ event.location }})
+                    {% if event.presentations.size > 0 %}
+                        <div class="dropdown" style="display:inline">
+                            <i style="cursor:pointer" class="fa fa-plus-square dropdown-toggle" id="eventDropdownMenu{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></i>
+                            <ul class="dropdown-menu" aria-labelledby="eventDropdownMenu{{ forloop.index }}">
+                                {% for pres in event.presentations %}
+                                <li>
+                                    {% if pres.type == 'talk' %}
+                                        {% if pres.doclink %}
+                                            <a href="{{ site.baseurl}}/assets/{{ pres.doclink }}" target="_new">
+                                                <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> Slides
+                                            </a>
+                                        {% endif %}
+                                    {% elsif pres.type == 'poster' %}
+                                        {% if pres.doclink %}
+                                            <a href="{{ site.baseurl}}/assets/{{ pres.doclink }}" target="_new">
+                                                <i class="fa fa-picture-o" aria-hidden="true"></i> Poster
+                                            </a>
+                                        {% endif %}
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                </dd>
+            {% endfor %}
+        </dl>
+        <nav>
+            <ul id="event-pagination" class="pagination"></ul>
+        </nav>
+    </div>
+</section>
+
+<section id="research">
+    <div class="container">
+        <h1 class="page-heading">Research</h1>
+        <p class="caption">
+            I develop algorithms to model biological processes, and search for patterns in biological data.
+			I also apply my algorithms in collaboration with biologists.
+			My recent work has focused on analyzing the mutated genes in large cohorts of cancer patients.
+			Below, I summarize some of the projects I have worked on, all in collaboration with other scientists.
+			You can also view a list of <a href='#publications'>my publications</a> below.
+		</p>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+					<div class="btn-group pull-right">
+						<div class="dropdown">
+		                    <span id="exclusivitySoftware" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="font-size:80%;cursor:pointer">
+		                        Software <span class="caret"></span>
+		                    </span>
+		                    <ul class="dropdown-menu" aria-labelledby="exclusivitySoftware">
+								<li><a href='http://github.com/raphael-group/wext' target='_new'><i class="fa fa-github" aria-hidden="true"></i> WExT</a></li>
+								<li><a href='http://github.com/raphael-group/comet' target='_new'><i class="fa fa-github" aria-hidden="true"></i> CoMEt</a></li>
+								<li><a href='http://github.com/raphael-group/multi-dendrix' target='_new'><i class="fa fa-github" aria-hidden="true"></i> Multi-Dendrix</a></li>
+		                    </ul>
+		                </div>
+					</div>
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Mutually exclusive mutations in cancer
+						</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+						<div class="col-lg-4 col-md-5">
+							<img src='{{ site.baseurl }}/assets/images/exclusivity.png' class='img-responsive' />
+						</div>
+						<div class="col-lg-8 col-md-7">
+							The <i>driver mutations</i> that cause cancer tend to be mutually exclusive within a given pathway across a cohort of tumors.
+							This provides a signal we can use to identify driver mutations and pathways simultaneously from DNA sequencing data.
+							I have developed multiple algorithms and statistical scores for identifying combinations of mutually exclusive mutations, and applied these methods in collaboration with cancer biologists.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwo">
+					<div class="btn-group pull-right">
+						<div class="dropdown">
+		                    <span id="hotnet2Software" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="font-size:80%;cursor:pointer">
+		                        Software <span class="caret"></span>
+		                    </span>
+		                    <ul class="dropdown-menu" aria-labelledby="hotnet2Software">
+								<li><a href='http://github.com/raphael-group/hotnet2' target='_new'><i class="fa fa-github" aria-hidden="true"></i> HotNet2</a></li>
+		                    </ul>
+		                </div>
+					</div>
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Significantly mutated subnetworks in cancer
+						</a>
+					</h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="panel-body">
+						<div class="col-lg-4 col-md-5">
+							<img src='{{ site.baseurl }}/assets/images/hotnet2.png' class='img-responsive' />
+						</div>
+						<div class="col-lg-8 col-md-7">
+							We developed the HotNet2 algorithm to search for significantly mutated subnetworks in genome-scale protein-protein interaction networks.
+							In this way, we can identify the pathways and protein complexes that are more mutated than expected by chance, and therefore likely to be targeted driver mutations.
+							We applied HotNet2 to multiple projects from The Cancer Genome Atlas, including the Pan-Cancer project.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+					<div class="btn-group pull-right">
+						<div class="dropdown">
+		                    <span id="magiSoftware" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="font-size:80%;cursor:pointer">
+		                        Software <span class="caret"></span>
+		                    </span>
+		                    <ul class="dropdown-menu" aria-labelledby="magiSoftware">
+								<li><a href='http://github.com/raphael-group/magi' target='_new'><i class="fa fa-github" aria-hidden="true"></i> MAGI</a></li>
+								<li><a href='http://github.com/raphael-group/magi-annotations' target='_new'><i class="fa fa-github" aria-hidden="true"></i> MAGI Annotations</a></li>
+		                    </ul>
+		                </div>
+					</div>
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							Visualization and annotation of mutation data
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						<div class="col-lg-4 col-md-5">
+							<img src='{{ site.baseurl }}/assets/images/magi.png' class='img-responsive' />
+						</div>
+						<div class="col-lg-8 col-md-7">
+							We developed the <a href='http://magi.brown.edu' target='_new'>MAGI web application</a> to reduce the computational burden for viewing mutation data on the web, especially for users who want to view private datasets with large public datasets.
+							MAGI also includes mutation annotations, linking mutations at the protein sequence level to references in the literature.
+							MAGI Annotations extends this functionality, allowing users to view and edit annotations for mutations and protein-protein interactions.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<section id="publications">
+    <div class="container">
+        <h1 class="page-heading">
+            Publications
+        </h1>
+        <form class="form-inline" id="publication-filters" style="padding-bottom:0px;margin-bottom:0px">
+            <div class="form-group">
+              <input type="checkbox" id='selected' checked data-key='selected'><label for='selected'>Selected</label>
+			  <input type="checkbox" id='peer-reviewed' data-key='class' data-value='Peer-reviewed' checked><label for='peer-reviewed'>Peer-reviewed</label>
+			  <input type="checkbox" id='invited' data-key='class' data-value='Invited' checked><label for='invited'>Invited</label>
+            </div>
+            <div class="form-group">
+                <div class="dropdown">
+                    <label for='year-dropdown' id="yearChecklist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Year <span class="caret"></span>
+                    </label>
+                    <ul class="dropdown-menu" aria-labelledby="yearChecklist">
+                        <li><input type="checkbox" id='in-press' data-key='year' data-value="in-press" checked><label for='in-press'>In press</label></li>
+                        <li><input type="checkbox" id='year2016' data-key='year' data-value="2016" checked><label for='year2016'>2016</label></li>
+                        <li><input type="checkbox" id='year2015' data-key='year' data-value="2015" checked><label for='year2015'>2015</label></li>
+                        <li><input type="checkbox" id='year2014' data-key='year' data-value="2014" checked><label for='year2014'>2014</label></li>
+                        <li><input type="checkbox" id='year2013' data-key='year' data-value="2013" checked><label for='year2013'>2013</label></li>
+                        <li><input type="checkbox" id='year2011' data-key='year' data-value="2011" checked><label for='year2011'>2011</label></li>
+                        <li><input type="checkbox" id='year2009' data-key='year' data-value="2009" checked><label for='year2009'>2009</label></li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+        <ul class="list-unstyled">
+        {% for pub in site.data.publications.pubs %}
+            <li style="padding-bottom:10px" class="publication" data-year='{{ pub.year }}' data-selected='{{ pub.selected }}' data-class='{{ pub.class }}'>
+                {% if pub.in_press %}
+					<span style="color:blue">{{ pub.title }}</span>
+				{% else %}
+					<a href='{{ pub.doc_link }}' target='_new' style="color:blue">
+	                    {{ pub.title }}
+	                </a>
+				{% endif %}
+                <br/>
+                {% if pub.authors.size > 5 %}
+                    <span style="border-bottom: 1px dotted #000;" data-toggle="popover" data-trigger="hover" data-placement='bottom' data-content='{{ pub.authors | join: ", " }}'>
+                        {{ pub.authors[0] }}, {{ pub.authors[1] }}, {{ pub.authors[2] }},
+                        {{ pub.authors[3] }}, {{ pub.authors[4] }}, <i>et al.</i>
+                    </span>
+                {% else %}
+                    {{ pub.authors | join: ", " }}
+                {% endif %}
+                <br/>
+                {% if pub.type == "Conference Proceedings" %}
+                    In the proceedings of
+                    <i style="font-weight:100">{{ pub.journal }} {{ pub.year }}</i>
+                    {% if pub.in_press %} (to appear) {% endif %}
+                {% else %}
+                    <i style="font-weight:100">{{ pub.journal }}</i>
+                    {% if pub.in_press %} (online pre-print) {% endif %}
+                    ({{ pub.year }})
+                {% endif %}
+                {% assign badges = pub.badges | sort: 'type' %}
+                {% if badges.size > 0 %}
+                    <div class="dropdown" style="display:inline">
+                        <i style="cursor:pointer" class="fa fa-plus-square dropdown-toggle" id="dropdownMenu{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu{{ forloop.index }}">
+                            {% for badge in badges %}
+                            <li>
+                                {% if badge.type == 'publink' %}
+                                  <a href="{{ badge.link }}" target="_new">
+                                      <i class="fa fa-file-pdf-o"></i>
+                                      Publisher PDF
+                                  </a>
+                              {% elsif badge.type == 'software' %}
+                                  <a href="{{ badge.link }}" target="_new">
+                                      <i class="fa fa-github-square"></i>
+                                      Software
+                                  </a>
+                              {% elsif badge.type == 'website' %}
+                                  <a href="{{ badge.link }}" target="_new">
+                                      <i class="fa fa-external-link-square"></i>
+                                      Website
+                                  </a>
+                              {% elsif badge.type == 'bibtek' %}
+                                  <a href="{{ site.baseurl }}/assets/docs/bibtek/{{ badge.link }}">
+                                      <i class="fa fa-file-text"></i>
+                                      Bibtek
+                                  </a>
+                              {% elsif badge.type == 'preprint' %}
+                                  <a href="{{ badge.link }}" target="_new">
+                                      <i class="fa fa-file"></i>
+                                      Preprint
+                                  </a>
+                              {% endif %}
+                          </li>
+                          {% endfor %}
+                      </ul>
+                    </div>
+                {% endif %}
+				{% if pub.press.size > 0 %}
+					<div class="dropdown" style="display:inline">
+						<i style="cursor:pointer" class="fa fa-newspaper-o dropdown-toggle" id="pressDropdownMenu{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></i>
+						<ul class="dropdown-menu" aria-labelledby="pressDropdownMenu{{ forloop.index }}">
+							{% for press in pub.press %}
+								<li><a href='{{ press.link }}' target='_new'>{{ press.type }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</section>

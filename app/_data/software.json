@@ -1,0 +1,40 @@
+{
+	"software":
+		[
+			{
+				"name": "CoMEt",
+				"year": 2015,
+				"img": null,
+				"url": "https://github.com/raphael-group/comet",
+				"description": "Python module for identifying <u>C</u>ombinations <u>o</u>f <u>M</u>utually <u>E</u>xclusive Al<u>t</u>erations in Cancer."
+			 },
+			{
+				"name": "MAGI",
+				"year": 2014,
+				"img": "magi.jpg",
+				"url": "https://github.com/raphael-group/magi",
+				"description": "<a href='http://magi.cs.brown.edu' target='_new'>Web application</a> for <u>M</u>utation <u>A</u>nnotation and <u>G</u>enome <u>I</u>nterpretation."
+			},
+			{
+				"name": "GD3",
+				"year": 2014,
+				"img": null,
+				"url": "https://github.com/raphael-group/gd3",
+				"description": "Javascript library for visualizing genomics data with <a href='http://d3js.org/' target='_new'>D3</a>."
+			},
+			{
+				"name": "HotNet2",
+				"year": 2014,
+				"img": "hotnet2.gif",
+				"url": "https://github.com/raphael-group/hotnet2",
+				"description": "Python module for finding significantly altered subnetworks in a large gene interaction network."
+			},
+			{
+				"name": "Multi-Dendrix",
+				"year": 2013,
+				"img": "multi-dendrix.png",
+				"url": "https://githubcom/raphael-group/multi-dendrix",
+				"description": "Python module for rapid identification of multiple driver pathways from cancer data."
+			}
+		]
+}

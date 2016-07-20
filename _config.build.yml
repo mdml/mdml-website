@@ -1,0 +1,5 @@
+future: false
+show_drafts: false
+
+assetsurl: /assets
+exclude: ['css', 'js', 'fonts']

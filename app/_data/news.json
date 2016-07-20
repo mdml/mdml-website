@@ -1,0 +1,57 @@
+{
+	"news":
+		[
+			{
+				"body": "<a href='http://magi.brown.edu' target='_new'>MAGI</a> was highlighted in <a href='http://news.brown.edu/articles/2015/07/cancer' target='_new'>News from Brown</a>, including a short video highlighting MAGI key features.",
+				"date": "Jul 23, 2015"
+			},
+			{
+				"body": "Our paper introducing the <a href='http://magi.brown.edu' target='_new'>MAGI</a> web application was just <a href='http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3412.html' target='_new'>published in <i>Nature Methods</i></a>.",
+				"date": "May 28, 2015"
+			},
+			{
+				"body": "Check out our <a href='http://www.nature.com/ng/journal/v47/n2/full/ng.3168.html' target='_new'>HotNet2 Pan-Cancer paper</a>, recently published in <i>Nature Genetics</i>.",
+				"date": "Dec 15, 2014"
+			},
+			{
+				"body": "Presented a poster at the first bi-annual <a href='http://meetings.cshl.edu/meetings/2014/data14.shtml' target='_new'>CSHL Biological Data Science</a> meeting.",
+				"date": "Nov 8, 2014"
+			},
+			{
+				"body": "Attended the <a href='http://www.heidelberg-laureate-forum.org/' target='_new'>Heidelberg Laureate Forum</a>, along with two other students from Brown. <a href='http://blog.cs.brown.edu/2014/10/01/brown-cs-finds-unique-way-celebrate-impressive-heidelberg-laureate-forum-representation/' target='_new'>We brought the Brown CS rubber chicken.</a>",
+				"date": "Oct 1, 2014"
+			},
+			{
+				"body": "Presented <a href='http://compbio.cs.brown.edu/projects/multi-dendrix/' target='_new'>Multi-Dendrix</a> as a <a href='http://www.iscb.org/cms_addon/conferences/ismb2014/highlights.php#Applied Bioinformatics' target='_new'>highlight talk at ISMB 2014</a>, where Brown <a href='http://cs.browne.du' target='_new'>CS</a> and <a href='http://brown.edu/ccmb' target='_new'>CCMB</a> enjoyed <a href='http://blog.cs.brown.edu/2014/07/08/brown-cs-and-ccmb-enjoy-record-participation-ismb-2014/' target='_new'>record participation</a>.",
+				"date": "Jul 14, 2014"
+			},
+			{
+				"body": "Presented posters on <a href='http://magi.cs.brown.edu' target='_new'>MAGI</a> and <a href='http://compbio.cs.brown.edu/projects/hotnet2' target='_new'>HotNet2</a> at the TCGA Scientific Symposium.",
+				"date": "May 12, 2014"
+			},
+			{
+				"body": "Presented a poster on Dendrix++ and <a href='http://compbio.cs.brown.edu/projects/multi-dendrix' target='_new'>Multi-Dendrix</a> at the <a href='http://research.microsoft.com/en-us/events/cabi2013/' target='_new'>2013 Computational Aspects of Biological Information (CABI) workshop</a> at MSR New England.",
+				"date": "Dec 15, 2013"
+			},
+			{
+				"body": "Check out our <a href='http://www.sciencedirect.com/science/article/pii/S0959437X13001354' target='_new'>review of network methods for GWAS data</a>, recently published in <i>Current Opinion in Genetics & Development</i>.",
+				"date": "Dec 1, 2013"
+			},
+			{
+				"body": "Presented a poster on <a href='http://compbio.cs.brown.edu/projects/hotnet' target='_new'>HotNet</a> analysis of TCGA Pan-Cancer data at the Cold Spring Harbor Biology of Genomes meeting.",
+				"date": "May 7, 2013"
+			},
+			{
+				"body": "Check out <a href='http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003054' target='_new'>our paper describing the Multi-Dendrix algorithm</a> with applications to glioblastoma and breast cancer data, recently published in <i>PLoS Computational Biology</i>.",
+				"date": "May 1, 2013"
+			},
+			{
+				"body": "Presented a poster on <a href='http://compbio.cs.brown.edu/projects/hotnet' target='_new'>HotNet</a> analysis of TCGA Pan-Cancer data at RECOMB 2013 in Beijing.",
+				"date": "Apr 7, 2013"
+			},
+			{
+				"body": "Presented a poster on the Dendrix++ and <a href='http://compbio.cs.brown.edu/projects/multi-dendrix' target='_new'>Multi-Dendrix</a> algorithms at the Beyond the Genomes conference in Boston.",
+				"date": "Sep 27, 2012"
+			}
+		]
+}

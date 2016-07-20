@@ -1,0 +1,28 @@
+{
+	"name": "max-leiserson",
+	"version": "0.0.1",
+	"description": "My personal and professional website",
+	"author": "Max Leiserson",
+	"devDependencies": {
+				"grunt": "latest",
+				"grunt-autoprefixer": "latest",
+				"grunt-build-control": "latest",
+				"grunt-contrib-clean": "latest",
+				"grunt-contrib-connect": "latest",
+				"grunt-contrib-copy": "latest",
+				"grunt-contrib-cssmin": "latest",
+				"grunt-contrib-htmlmin": "latest",
+				"grunt-contrib-imagemin": "latest",
+				"grunt-contrib-uglify": "latest",
+				"grunt-contrib-watch": "latest",
+				"grunt-critical": "latest",
+				"grunt-jekyll": "latest",
+				"grunt-svgmin": "latest",
+				"grunt-uncss": "latest",
+				"jit-grunt": "latest",
+				"time-grunt": "latest"
+		},
+		"engines": {
+				"node": "latest"
+		}
+}

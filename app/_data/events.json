@@ -1,0 +1,73 @@
+{
+	"events": [
+			{"date": "Sep 3-7, 2016", "name": "ECCB 2016", "link": "http://www.eccb2016.org/programme/programme/", "location": "The Hague, Netherlands", "year": 2016},
+			{"date": "Jul 9-12, 2016", "name": "ISMB 2016", "link": "http://www.iscb.org/cms_addon/conferences/ismb2016/lbr.php", "location": "Orlando, FL", "year": 2016, "presentations": [{"type": "talk", "doclink": "docs/talks/leiserson-ismb-2016-wext.pptx"}] },
+			{"date": "Feb 1-5, 2016", "name": "Computational Cancer Biology Workshop", "link": "https://simons.berkeley.edu/talks/max-leiserson-02-02-2016", "location": "Berkeley, CA", "year": 2016, "presentations": [{"type": "talk", "doclink": "docs/talks/Leiserson-2016-Simons-Cancer-CoMEt.pptx"}] },
+			{"date": "Jul 10-14, 2015", "name": "ISMB 2015", "link": "http://www.iscb.org/ismbeccb2015-program", "location": "Dublin, Ireland", "year": 2015, "presentations": [{"type": "talk", "doclink": "docs/talks/leiserson-ismb-2015-hotnet2.pdf"}]},
+			{"date": "May 11-12, 2015", "name": "TCGA Symposium", "link": "http://www.capconcorp.com/meeting/2015/TCGASymposium/agenda.asp", "location": "Washington, DC", "year": 2015},
+			{"date": "Apr 21-23, 2015", "name": "Bio-IT World", "link": "http://www.bio-itworldexpo.com/Bio-It_Expo_Content.aspx?id=143102#W2", "location": "Boston, MA", "year": 2015 },
+			{"date": "Apr 12-15, 2015", "name": "RECOMB 2015", "link": "http://www.recomb2015.pl/accepted-papers", "location": "Warsaw, Poland", "year": 2015, "presentations":[ { "type": "talk", "doclink": "docs/talks/leiserson-recomb-2015-hotnet2.pdf" } ]},
+			{"date": "Mar 17-21, 2015", "name": "Systems Biology: Networks", "link": "http://meetings.cshl.edu/meetings/2015/SysBioBackup/network15.shtml", "location": "Cold Spring Harbor", "year": 2015,
+			"presentations":[
+				{
+					"type": "poster",
+					"doclink": "docs/posters/SystemsBiologyNetworks2015.jpg"
+				}
+			]},
+			{"date": "Nov 5-8, 2014", "name": "Biological Data Science", "link": "http://meetings.cshl.edu/meetings/2014/data14.shtml", "location": "Cold Spring Harbor", "year": 2014,
+			"presentations":[
+				{
+					"type": "poster",
+					"doclink": "docs/posters/BiologicalDataScience2014.MAGI.jpg"
+				}
+			]},
+			{"date": "Jul 11-15, 2014", "name": "ISMB 2014", "link": "http://www.iscb.org/cms_addon/conferences/ismb2014/highlights.php", "location": "Boston, MA", "year": 2014,
+			"presentations":[
+				{
+					"type": "talk",
+					"doclink": "docs/talks/leiserson-ismb-2014-multi-dendrix.pdf"
+				}
+			]},
+			{"date": "May 12-13, 2014", "name": "TCGA Scientific Symposium", "link": "http://www.capconcorp.com/meeting/2014/TCGASymposium/default.asp", "location": "Bethesda, MD", "year": 2014,
+			"presentations":[
+				{
+					"type": "poster",
+					"doclink": "docs/posters/TCGA2014-MAGI.png"
+				},
+				{
+					"type": "poster",
+					"doclink": "docs/posters/TCGA2014-HN2.png"
+				}
+			]},
+            {"date": "Dec 15, 2013", "name": "CABI Workshop", "link": "http://research.microsoft.com/en-us/events/cabi2013/", "location": "Boston, MA", "year": 2013,
+            "presentations":[
+				{
+					"type": "poster",
+					"doclink": "docs/posters/CABI2013.png"
+				}
+            ]},
+            {"date": "May 7-11, 2013", "name": "Biology of Genomes",
+             "link": "http://meetings.cshl.edu/meetings/2013/genome13.shtml", "location": "Cold Spring Harbor, NY", "year": 2013,
+             "presentations": [
+             	{
+					"type": "poster",
+					"doclink": "docs/posters/BiologyOfGenomes2013.png"
+				}
+             ]},
+			{"date": "Apr 7-10, 2013", "name": "RECOMB 2013 Conference", "link": "http://bioinfo.au.tsinghua.edu.cn/recomb2013/",
+			"location": "Beijing, China", "year": 2013,
+			"presentations": [
+				{
+					"type": "poster",
+					"doclink": "docs/posters/RECOMB2013.png"
+				}
+			]},
+			{"date": "Sep 27-29, 2012", "name": "Beyond the Genome", "link": "http://www.beyond-the-genome.com/2012/", "completed": true, "location": "Boston, MA", "year": 2012,
+			"presentations":[
+				{
+					"type": "poster",
+					"doclink": "docs/posters/BeyondTheGenome2012.pdf"
+				}
+			]}
+		]
+}
