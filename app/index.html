@@ -35,7 +35,7 @@ title: Max Leiserson's Website
                 <dd class="event">
                     <a href="{{ event.link }}" target="_new">{{ event.name }}</a> ({{ event.location }})
                     {% if event.presentations.size > 0 %}
-                        <div class="dropdown" style="display:inline">
+                        <div class="dropdown" style="display:inline;margin-left:3px">
                             <i style="cursor:pointer" class="fa fa-plus-square dropdown-toggle" id="eventDropdownMenu{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></i>
                             <ul class="dropdown-menu" aria-labelledby="eventDropdownMenu{{ forloop.index }}">
                                 {% for pres in event.presentations %}
@@ -236,7 +236,7 @@ title: Max Leiserson's Website
                 {% endif %}
                 {% assign badges = pub.badges | sort: 'type' %}
                 {% if badges.size > 0 %}
-                    <div class="dropdown" style="display:inline">
+                    <div class="dropdown" style="display:inline;margin-left:3px">
                         <i style="cursor:pointer" class="fa fa-plus-square dropdown-toggle" id="dropdownMenu{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></i>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu{{ forloop.index }}">
                             {% for badge in badges %}
@@ -273,7 +273,7 @@ title: Max Leiserson's Website
                     </div>
                 {% endif %}
 				{% if pub.press.size > 0 %}
-					<div class="dropdown" style="display:inline">
+					<div class="dropdown" style="display:inline;margin-left:3px">
 						<i style="cursor:pointer" class="fa fa-newspaper-o dropdown-toggle" id="pressDropdownMenu{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></i>
 						<ul class="dropdown-menu" aria-labelledby="pressDropdownMenu{{ forloop.index }}">
 							{% for press in pub.press %}

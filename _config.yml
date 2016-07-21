@@ -17,3 +17,6 @@ github_username:  mdml
 
 # Build settings
 markdown: kramdown
+
+# Grunt handles this stuff
+exclude: ['images', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
