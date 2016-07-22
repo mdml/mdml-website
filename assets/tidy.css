@@ -768,3 +768,10 @@
 
 /* Custom */
 li.publication{padding-bottom:10px;}
+dl.dl-horizontal{margin-bottom:0px;}
+section#events div.dropdown, section#publications div.dropdown{display:inline;margin-left:3px;}
+section#research div.dropdown span{font-size:80%;cursor:pointer;}
+form#publication-filters{padding-bottom:0px;margin-bottom:0px;}
+.pub-name{color:blue;}
+.authors-abbr{border-bottom: 1px dotted #000;}
+.journal{font-weight:100;}
